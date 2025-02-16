@@ -1,0 +1,101 @@
+html {
+  background-color: #666;
+background-image:url('../images/bg.jpg');
+background-size: cover;
+}
+body{
+	background-image: url(../bg.jpg);
+	background-size: cover;
+	
+	font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 13px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+h3{
+	margin:0px;
+	padding:20px;
+    text-align:left;
+	color: #92a5de;
+	text-align: center;
+
+font: bold 40px Sans-Serif;
+}
+#container {
+        width: 800px;
+        height: 600px;
+        padding: 10px;
+        text-align: center;
+      }
+      #certificate {
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        margin-left: 400px;
+        margin-top: 80px;
+        border: 2px solid black;
+        background-color: white;
+      }
+      h1 {
+        margin-left: 170px;
+        color: #92a5de;
+        font: bold 40px Sans-Serif;
+        
+      }
+      input[type="submit"] {
+        margin-left: 200px;
+        background-color: lightblue;
+        height: 30px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px grey;
+      }
+      h3 {
+        color: #92a5de;
+        font: bold 40px Sans-Serif;
+        text-align: center;
+        text-shadow: 3px 3px 6px rgba(65, 129, 212, 0.944); 
+        -webkit-text-stroke: 1px white; 
+      }
+      
+      .bmenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+      }
+      
+      .bmenu li {
+        margin: 10px 0; 
+      }
+      
+      .bmenu a {
+        text-decoration: none;
+        color: #ccc;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 13px 70px;
+        border-radius: 5px;
+        font-size: 28px;
+        transition: background-color 0.3s, color 0.3s, text-shadow 0.3s, border-radius 0.3s;
+      }
+      
+      .bmenu a:hover {
+        background-color: #ddd;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+      .content {
+        width: 400px;
+        background-color: rgba(67, 23, 23, 0.7); 
+        padding: 20px; 
+        margin: 0 auto;
+      }

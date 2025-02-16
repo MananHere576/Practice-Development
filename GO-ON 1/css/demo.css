@@ -1,0 +1,115 @@
+@import url('reset.css');
+/* General Demo Style */
+html {
+    background-color: #666;
+	background-image:url('../images/bg.jpg');
+	background-size: cover;
+}
+body{
+	background-image: url(../bg.jpg);
+	background-size: cover;
+	
+	font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 13px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+h3{
+	margin-left: 20px;
+	padding:20px;
+    text-align:left;
+	color: #92a5de;
+	text-align: center;
+  font: bold 40px Sans-Serif;
+}
+ul {
+    list-style-type: none;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #666;
+  }
+  li {
+  float: left;
+}
+.active {
+    background-color: red;
+  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+#features a {
+    
+    margin-top: 1em;
+    padding: .5em;
+}
+
+.mainContent {
+	display: flex;
+	background-color: transparent;
+	padding: 20px; 
+	margin-bottom: 10px; 
+  }
+  .content{
+    flex: 2;
+  }
+  .topContent ,.bottomContent{
+  margin-left: 50px;
+	background-color: white;
+	padding: 20px;
+	margin-right: 20px;
+	width: 800px;
+  }
+  .row-container {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+  }
+  .top-sidebar,
+.middle-sidebar,
+.bottom-sidebar {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  width: 400px;
+  height:100px;
+}
+.top-sidebar article,
+.middle-sidebar article,
+.bottom-sidebar article {
+  margin-bottom: 15px;
+}
+  a {
+	color: red;
+  }
+  footer {
+    padding: 1em;
+}
+footer p {
+    color: #fff;
+}
+footer .post-info {
+  color: black;
+}
+.mainFooter
+{
+    list-style-type: none;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #666;
+}

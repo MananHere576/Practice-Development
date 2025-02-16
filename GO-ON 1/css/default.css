@@ -1,0 +1,57 @@
+html {
+    background-color: #666;
+	background-image:url('bg.jpg');
+	background-size: cover;
+}
+body {
+    color: #2A4560;
+}
+header, header a {
+    background-color: #2A4560;
+    color: #fff;
+}
+div {
+    background-color: #e4ecf4;
+    color: #2A4560;
+}
+footer {
+    background-color: #2A4560;
+}
+
+footer p {
+    color: #fff;
+}
+
+ul#features > li a {
+    
+   
+    color:red;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+header, footer, h1 {
+    text-align: center;
+}
+body, header,div, footer, fieldset, ul, li, h1, h2, p, img {
+    
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 75%;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#features a {
+    
+    margin-top: 1em;
+    padding: .5em;
+}
+footer {
+    padding: 1em;
+}

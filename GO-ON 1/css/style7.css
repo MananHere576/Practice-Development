@@ -1,0 +1,29 @@
+.bmenu {
+  padding: 50px 0px;
+  margin-left: 400px;
+  position: relative;
+  background: rgba(20, 0, 0, 0.7);
+  width: 500px;
+  height: 300px;
+}
+
+.bmenu:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bmenu li {
+  font-size: 40px;
+  display: block;
+  line-height: 66px;
+}
+.bmenu li a {
+  white-space: nowrap;
+  color: transparent;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px #fff;
+  letter-spacing: 1px;
+}
+
+
