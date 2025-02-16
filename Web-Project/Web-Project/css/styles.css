@@ -1,0 +1,173 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Inter Display;
+    background-color: #f8f8f8; 
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    flex: 1;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #5a5a5a;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #3498db; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #2980b9; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+th#psit,
+th#logo,
+th a {
+    background-color: rgb(255, 251, 0)) 
+    color: #fff;
+}
+
+
+.navigation {
+    background-color: #ecf0f1; 
+}
+
+.logo-img {
+    max-width: 100px;
+}
+
+
+@media (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+}
+
+/* Container-specific styles */
+.description-container {
+    flex: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.login-container,
+.catalog-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.login-container label,
+.login-container input,
+.login-container button,
+.catalog-container img,
+.catalog-container h2,
+.catalog-container p,
+.catalog-container ol {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.login-container input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container button,
+.catalog-container button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.catalog-container table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.add-to-cart-button {
+    background-color: #ffffff00;
+    /* color: #fff; */
+    padding: 0px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+    background-color: #7a7a7a20;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.091);
+}

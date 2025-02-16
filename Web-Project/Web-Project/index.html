@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Responsive Table</title>
+</head>
+<body>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th id="logo"><img src="images/Psit Logo.jpg" alt="Logo" class="logo-img"></th>
+                    <th style="text-align: center;" id="psit" colspan="4"><h1>PSIT Book Store</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="navigation" height = 9px>
+                    <td><a href="#" onclick="showDescription()">Home</a></td>
+                    <td><a href="#" onclick="showLoginForm()">Login</a></td>
+                    <td><a href="Registration.html">Registration</a></td>
+                    <td><a href="#" onclick="showCatalogPage()">Catalogue</a></td>
+                    <td><a href="Cart.html">Cart</a></td>
+                </tr>
+                <tr>
+                    <td width = 20px style="text-decoration: bol;">
+                        <a href="javascript:void(0);" onclick="showCategory('cse')">CSE</a><br>
+                        <a href="javascript:void(0);" onclick="showCategory('ece')">ECE</a><br>
+                        <a href="javascript:void(0);" onclick="showCategory('eee')">EEE</a><br>
+                        <a href="javascript:void(0);" onclick="showCategory('civil')">CIVIL</a><br>
+                    </td>
+                    <td colspan="4" id="description-container" class="description-container">
+                        <div class="login-container" id="login-container">
+                            <form action="process_login.php" method="post">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                            </form>
+                        </div>
+
+                        <div class="cse-container" style="display: none;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cover Page</th>
+                                        <th>Author Name</th>
+                                        <th>Publisher</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"src="images/Book 1.jpeg" alt="Book 1 Cover"></td>
+                                        <td>Thomas H. Cormen</td>
+                                        <td> PHI Learning Private Limited
+                                        </td>
+                                        <td>₹500</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;" src="images/Book 2.jpg" alt="Book 2 Cover"></td>
+                                        <td>Robert C. Martin</td>
+                                        <td>Prentice Hall India</td>
+                                        <td>₹400</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 3.jpg" alt="Book 3 Cover"></td>
+                                        <td>Abraham Silberschatz</td>
+                                        <td>Wiley India</td>
+                                        <td>₹900</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 4.jpg" alt="Book 4 Cover"></td>
+                                        <td>James F. Kurose and Keith W. Ross</td>
+                                        <td>Pearson India</td>
+                                        <td>₹1200
+                                        </td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="ece-container" style="display: none;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cover Page</th>
+                                        <th>Author Name</th>
+                                        <th>Publisher</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"src="images/Book 1.jpeg" alt="Book 1 Cover"></td>
+                                        <td>Thomas H. Cormen</td>
+                                        <td> PHI Learning Private Limited
+                                        </td>
+                                        <td>₹500</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;" src="images/Book 2.jpg" alt="Book 2 Cover"></td>
+                                        <td>Robert C. Martin</td>
+                                        <td>Prentice Hall India</td>
+                                        <td>₹400</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 3.jpg" alt="Book 3 Cover"></td>
+                                        <td>Abraham Silberschatz</td>
+                                        <td>Wiley India</td>
+                                        <td>₹900</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 4.jpg" alt="Book 4 Cover"></td>
+                                        <td>James F. Kurose and Keith W. Ross</td>
+                                        <td>Pearson India</td>
+                                        <td>₹1200
+                                        </td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="eee-container" style="display: none;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cover Page</th>
+                                        <th>Author Name</th>
+                                        <th>Publisher</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"src="images/Book 1.jpeg" alt="Book 1 Cover"></td>
+                                        <td>Thomas H. Cormen</td>
+                                        <td> PHI Learning Private Limited
+                                        </td>
+                                        <td>₹500</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;" src="images/Book 2.jpg" alt="Book 2 Cover"></td>
+                                        <td>Robert C. Martin</td>
+                                        <td>Prentice Hall India</td>
+                                        <td>₹400</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 3.jpg" alt="Book 3 Cover"></td>
+                                        <td>Abraham Silberschatz</td>
+                                        <td>Wiley India</td>
+                                        <td>₹900</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 4.jpg" alt="Book 4 Cover"></td>
+                                        <td>James F. Kurose and Keith W. Ross</td>
+                                        <td>Pearson India</td>
+                                        <td>₹1200
+                                        </td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="civil-container" style="display: none;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cover Page</th>
+                                        <th>Author Name</th>
+                                        <th>Publisher</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"src="images/Book 1.jpeg" alt="Book 1 Cover"></td>
+                                        <td>Thomas H. Cormen</td>
+                                        <td> PHI Learning Private Limited
+                                        </td>
+                                        <td>₹500</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;" src="images/Book 2.jpg" alt="Book 2 Cover"></td>
+                                        <td>Robert C. Martin</td>
+                                        <td>Prentice Hall India</td>
+                                        <td>₹400</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 3.jpg" alt="Book 3 Cover"></td>
+                                        <td>Abraham Silberschatz</td>
+                                        <td>Wiley India</td>
+                                        <td>₹900</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 4.jpg" alt="Book 4 Cover"></td>
+                                        <td>James F. Kurose and Keith W. Ross</td>
+                                        <td>Pearson India</td>
+                                        <td>₹1200
+                                        </td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="catalog-container" id="catalog-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Cover Page</th>
+                                        <th>Author Name</th>
+                                        <th>Publisher</th>
+                                        <th>Price</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"src="images/Book 1.jpeg" alt="Book 1 Cover"></td>
+                                        <td>Thomas H. Cormen</td>
+                                        <td> PHI Learning Private Limited
+                                        </td>
+                                        <td>₹500</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;" src="images/Book 2.jpg" alt="Book 2 Cover"></td>
+                                        <td>Robert C. Martin</td>
+                                        <td>Prentice Hall India</td>
+                                        <td>₹400</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 3.jpg" alt="Book 3 Cover"></td>
+                                        <td>Abraham Silberschatz</td>
+                                        <td>Wiley India</td>
+                                        <td>₹900</td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img style="height: 100px; width:100px;"  src="images/Book 4.jpg" alt="Book 4 Cover"></td>
+                                        <td>James F. Kurose and Keith W. Ross</td>
+                                        <td>Pearson India</td>
+                                        <td>₹1200
+                                        </td>
+                                        <td><button class="add-to-cart-button"><img src="images\add-to-cart.png" width=150px alt="add to cart"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
